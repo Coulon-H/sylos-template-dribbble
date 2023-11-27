@@ -1,0 +1,76 @@
+.col-first{
+    width: 60%;
+}
+
+.col-second{
+    width: 30%;
+}
+
+.row-cart{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+    gap: 1.5em;
+}
+
+.contour{
+    overflow-y: scroll;
+}
+
+.col-second > .contour{
+    border-radius: 0.8em;
+    background-color: white;
+    padding: 1em;
+}
+
+.col{
+    width: 50%;
+}
+
+img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 0.8em;
+}
+
+button{
+    width: 15%;
+    border-radius: 0.8em;
+}
+
+.col > .row > button{
+    height: 3.5em;
+}
+
+button > img{
+    width: 69%;
+}
+
+button[type=submit]{
+    width: 75%;
+    padding: 1em;
+}
+
+@media screen and (max-width: 380px) {
+    .col-first, .col-second{
+        width: 100%;
+    }
+
+    #middle{
+        flex-direction: column;
+    }
+
+    #column{
+        flex-direction: column;
+    }
+
+    button{
+        width: 35%;
+    }
+
+    .col-first > .contour > *{
+        margin: 1em 0;
+    }
+}

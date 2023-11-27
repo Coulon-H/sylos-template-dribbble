@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Nostra</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="visible">
+          <li><a href="./products.html">Shop</a></li>
+          <li>Most Wanted</li>
+          <li>What's new</li>
+          <li>Brands</li>
+        </ul>
+        <h1><a href="./index.html">Sylos</a></h1>
+        <ul id="visible">
+          <li>EN</li>
+          <li>Login</li>
+          <li><a href="./cart.html">Cart</a></li>
+        </ul>
+        <ul id="hamburger">
+          <li id="show">
+              <a href="#">
+                  <img src="./images/menu.svg" alt="">
+              </a>
+              <div class="card">
+                <a href="./products.html">Shop</a>
+                <a href="./cart.html">Cart</a>
+                <a href="">What's new</a>
+                <a href="">Brands</a>
+            </div>
+          </li>
+      </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="row" id="column" style="gap: 1em; padding : 0.8em">
+        <div class="col-first">
+          <div class="contour" style="height: 62vh">
+            <div class="row justify-between">
+              <p>Image</p>
+              <p style="width: 5%">Quantity</p>
+              <p style="width: 15%">Total</p>
+            </div>
+            <div class="row-cart">
+              <div class="col"><img src="./images/product_1.jpg" alt="" /></div>
+              <div class="col">
+                <div class="row justify-center align-center" style="gap : 0.6em">
+                  <button>
+                    <img class="add" src="./images/minus.svg" alt="" />
+                  </button>
+                  <span>3</span>
+                  <button>
+                    <img class="add" src="./images/add.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col">4500$</div>
+            </div>
+            <div class="row-cart">
+              <div class="col"><img src="./images/product_1.jpg" alt="" /></div>
+              <div class="col">
+                <div class="row justify-center align-center" style="gap : 0.6em">
+                  <button>
+                    <img class="add" src="./images/minus.svg" alt="" />
+                  </button>
+                  <span>3</span>
+                  <button>
+                    <img class="add" src="./images/add.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col">4500$</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-second">
+          <div class="contour" style="height: 44.3vh">
+              <div class="row justify-between">
+                <p>Sub - Total</p>
+                <p>15000$</p>
+              </div>
+              <div class="row justify-between">
+                <p>Shipping Fee</p>
+                <p>1200$</p>
+              </div>
+              <hr>
+              <div class="row justify-between">
+                <p>Total</p>
+                <p>16200$</p>
+              </div>
+              <button type="submit">Pay | $$$</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
